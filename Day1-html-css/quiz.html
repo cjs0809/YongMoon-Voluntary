@@ -8,7 +8,7 @@
     div.nav{display: flex; flex-direction: row; align-items: center; height: 35px; margin-bottom: 10px;  background-color: white;text-decoration-line: none;}
     ul{list-style: none;}
     li{float: left; }
-    a{padding-right: 30px; text-decoration: none; color: black; font-weight: 600;}
+    a{padding-right: 30px; text-decoration: none; color: pink; font-weight: 600;}
     div.main_quiz{display: flex; flex-direction: column; align-items: center; min-height: 70vh; padding: 50px; background-color: white;}
     
     p#intro1{display: flex; text-align: center; font-size: 30px;}
@@ -57,6 +57,7 @@
     <div class="quiz_container">
       <div class="question">
         <!-- p태그를 이용하여 첫 번째 문제를 내주세요 -->
+        <p>1. 최준상의 프로필 사진은 무엇인가?</p>
       </div>
       <div class="option">
         <div id="answer_option">
@@ -65,18 +66,23 @@
               <img id="profile" src="profile.jpg" width="10%">
               <div id="q1_radio">
                 <!-- input 타입 중 radio를 이용하여 보기1을 만들어주세요 -->
+                <input type="radio" name="profile"> 근엄한 최준상
               </div>
           </div>
           <div id="q1_answer">
               <!-- 이미지 넣기를 이용하여 보기 이미지2를 넣어주세요 (id는 "profile") -->
+              <img id="profile" src="profile2.jpg" width="10%">
               <div id="q1_radio">
                 <!-- input 타입 중 radio를 이용하여 보기2를 만들어주세요 -->
+                <input type="radio" name="profile"> 당당한 최준상
               </div>
           </div>
           <div id="q1_answer">
               <!-- 이미지 넣기를 이용하여 보기 이미지3을 넣어주세요 (id는 "profile") -->
+              <img id="profile" src="profile3.jpg" width="10%">
               <div id="q1_radio">
                 <!-- input 타입 중 radio를 이용하여 보기3을 만들어주세요 -->
+                <input type="radio" name="profile"> 아낌없이 주는 최준상
               </div>
           </div>
         </div>
@@ -87,6 +93,7 @@
         <div class="answer_container">
           <p class="answer_is"><strong>정답은 바로!!</strong></p>
           <!-- p태그를 이용하여 첫 번째 문제의 정답을 써주세요 -->
+          <p>근엄한 최준상입니다</p>
         </div>
       </div>
     </div>
@@ -97,9 +104,11 @@
     <div class="quiz_container">
       <div class="question">
         <!-- p태그를 이용하여 두 번째 문제를 내주세요 -->
+        <p>최준상의 나이는?</p>
       </div>
       <div class="option">
         <!-- input 타입 중 text를 이용하여 입력창을 만들어주세요 (placeholder 사용해보기) -->
+        <input type="text">
       </div>
 
       <div class="answer">
@@ -107,6 +116,7 @@
         <div class="answer_container">
           <p class="answer_is"><strong>정답은 바로!!</strong></p>
           <!-- p태그를 이용하여 두 번째 문제의 정답을 써주세요 -->
+          <p>17세입니다</p>
         </div>
       </div>
     </div>
@@ -117,9 +127,15 @@
     <div class="quiz_container">
       <div class="question">
         <!-- p태그를 이용하여 세 번째 문제를 내주세요 -->
+        <p>최준상의 취미를 모두 고르세요.</p>
       </div>
       <div class="option">
         <!-- input 타입 중 checkbox를 이용하여 3개 이상의 보기를 만들어주세요 -->
+        <input type="checkbox"> 게임하기
+        <input type="checkbox"> 요리하기
+        <input type="checkbox"> 피아노 치기
+        <input type="checkbox"> 운동하기
+        <input type="checkbox"> 공부하기
       </div>
 
       <div class="answer">
@@ -127,6 +143,7 @@
         <div class="answer_container">
           <p class="answer_is"><strong>정답은 바로!!</strong></p>
           <!-- p태그를 이용하여 세 번째 문제의 정답을 써주세요 -->
+          <p>게임하기</p><p>요리하기</p><p>피아노 치기</p><p>운동하기입니다</p>
         </div>
       </div>
     </div>
