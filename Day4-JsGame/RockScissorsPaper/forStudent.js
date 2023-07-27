@@ -106,7 +106,9 @@ const changeIMG = (answer) => { // randomNumber로부터 정해진 answer, 즉 �
 };
 
 const randomNumber = (n, m) => { // n부터 m까지의 랜덤한 숫자를 만드는 난수 발생 함수를 만드세요! return 타입은 INT입니다!
-	/* 
+	const a= Math.floor(Math.random()*(m-n+1))+n;
+    return (a);
+    /* 
      * n에는 시작 값이 들어오고, m에는 끝 값이 들어오게 되며
      * n~m까지의 난수를 발생시키는 random 함수를 만드세요! (Tip. 2일차 JavaScript 기초 파일의 27페이지를 확인해보세요!)
      * return 타입은 정수 타입인 INT입니다!
@@ -114,7 +116,13 @@ const randomNumber = (n, m) => { // n부터 m까지의 랜덤한 숫자를 만�
 };
 
 const judge = (answer, submit) => { // 결과를 "Draw", "Lose", "Win" 형태로 도출하여 String의 형태로 return하세요!
-	/* 
+	if(answer===submit){return 'Draw'}
+    else if(answer===-1 && submit===0){return 'Win'}
+    else if(answer===-1 && submit===1){return 'Lose'}
+    else if(answer===0 && submit===1){return 'Win'}
+    else if(answer===0 && submit===-1){return 'Lose'}
+    else if(answer===1 && submit===0){return 'Lose'}
+    /* 
      * 가위 = -1, 바위 = 0, 보자기 = 1 입니다.
      * answer에는 상대편 카드로는 -1, 0, 1 중 하나의 값이 들어옵니다.
      * submit에는 자신이 선택한 카드에 따라 -1, 0, 1 중 하나의 값이 들어옵니다.
